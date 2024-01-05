@@ -1,4 +1,4 @@
-#include "form1.h"
+#include "form.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
