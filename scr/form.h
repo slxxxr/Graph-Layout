@@ -13,7 +13,7 @@ namespace kurs {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для form1
+	/// РЎРІРѕРґРєР° РґР»СЏ form1
 	/// </summary>
 	public ref class form1 : public System::Windows::Forms::Form
 	{
@@ -22,13 +22,13 @@ namespace kurs {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~form1()
 		{
@@ -59,14 +59,14 @@ namespace kurs {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -92,7 +92,7 @@ namespace kurs {
 			this->input_text->Name = L"input_text";
 			this->input_text->Size = System::Drawing::Size(388, 29);
 			this->input_text->TabIndex = 0;
-			this->input_text->Text = L"Введите граф списком ребер:";
+			this->input_text->Text = L"Р’РІРµРґРёС‚Рµ РіСЂР°С„ СЃРїРёСЃРєРѕРј СЂРµР±РµСЂ:";
 			// 
 			// input_field
 			// 
@@ -115,7 +115,7 @@ namespace kurs {
 			this->calc_btn->Name = L"calc_btn";
 			this->calc_btn->Size = System::Drawing::Size(421, 86);
 			this->calc_btn->TabIndex = 2;
-			this->calc_btn->Text = L"Найти ";
+			this->calc_btn->Text = L"РќР°Р№С‚Рё ";
 			this->calc_btn->UseVisualStyleBackColor = true;
 			this->calc_btn->Click += gcnew System::EventHandler(this, &form1::calc_btn_Click);
 			// 
@@ -128,7 +128,7 @@ namespace kurs {
 			this->info_text->Name = L"info_text";
 			this->info_text->Size = System::Drawing::Size(287, 29);
 			this->info_text->TabIndex = 3;
-			this->info_text->Text = L"Формат ввода графа:\r\n";
+			this->info_text->Text = L"Р¤РѕСЂРјР°С‚ РІРІРѕРґР° РіСЂР°С„Р°:\r\n";
 			// 
 			// sample_text
 			// 
@@ -140,8 +140,8 @@ namespace kurs {
 			this->sample_text->Name = L"sample_text";
 			this->sample_text->Size = System::Drawing::Size(493, 220);
 			this->sample_text->TabIndex = 4;
-			this->sample_text->Text = L"В первой строке введите через пробел два числа N и M: \r\nколичество вершин и ребер"
-				L" соответственно\r\nДалее в M строках введите через пробел концы ребер.\r\n\r\nПример:\r"
+			this->sample_text->Text = L"Р’ РїРµСЂРІРѕР№ СЃС‚СЂРѕРєРµ РІРІРµРґРёС‚Рµ С‡РµСЂРµР· РїСЂРѕР±РµР» РґРІР° С‡РёСЃР»Р° N Рё M: \r\nРєРѕР»РёС‡РµСЃС‚РІРѕ РІРµСЂС€РёРЅ Рё СЂРµР±РµСЂ"
+				L" СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ\r\nР”Р°Р»РµРµ РІ M СЃС‚СЂРѕРєР°С… РІРІРµРґРёС‚Рµ С‡РµСЂРµР· РїСЂРѕР±РµР» РєРѕРЅС†С‹ СЂРµР±РµСЂ.\r\n\r\nРџСЂРёРјРµСЂ:\r"
 				L"\n4 4\r\n1 2\r\n3 2\r\n4 3\r\n3 1";
 			// 
 			// pictureBox1
@@ -161,7 +161,7 @@ namespace kurs {
 				static_cast<System::Byte>(204)));
 			this->listBox1->FormattingEnabled = true;
 			this->listBox1->ItemHeight = 25;
-			this->listBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Мосты", L"Точки сочленения", L"Компоненты связности " });
+			this->listBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"РњРѕСЃС‚С‹", L"РўРѕС‡РєРё СЃРѕС‡Р»РµРЅРµРЅРёСЏ", L"РљРѕРјРїРѕРЅРµРЅС‚С‹ СЃРІСЏР·РЅРѕСЃС‚Рё " });
 			this->listBox1->Location = System::Drawing::Point(439, 364);
 			this->listBox1->Name = L"listBox1";
 			this->listBox1->Size = System::Drawing::Size(421, 79);
@@ -176,7 +176,7 @@ namespace kurs {
 			this->choise_txt->Name = L"choise_txt";
 			this->choise_txt->Size = System::Drawing::Size(395, 25);
 			this->choise_txt->TabIndex = 9;
-			this->choise_txt->Text = L"Выберите что хотите найти в графе:\r\n";
+			this->choise_txt->Text = L"Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РЅР°Р№С‚Рё РІ РіСЂР°С„Рµ:\r\n";
 			// 
 			// out_format_txt
 			// 
@@ -187,7 +187,7 @@ namespace kurs {
 			this->out_format_txt->Name = L"out_format_txt";
 			this->out_format_txt->Size = System::Drawing::Size(382, 26);
 			this->out_format_txt->TabIndex = 10;
-			this->out_format_txt->Text = L"Информация о формате вывода:";
+			this->out_format_txt->Text = L"РРЅС„РѕСЂРјР°С†РёСЏ Рѕ С„РѕСЂРјР°С‚Рµ РІС‹РІРѕРґР°:";
 			// 
 			// out_text
 			// 
@@ -199,7 +199,7 @@ namespace kurs {
 			this->out_text->Name = L"out_text";
 			this->out_text->Size = System::Drawing::Size(343, 22);
 			this->out_text->TabIndex = 11;
-			this->out_text->Text = L"Выберите что хотите найти в графе";
+			this->out_text->Text = L"Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РЅР°Р№С‚Рё РІ РіСЂР°С„Рµ";
 			// 
 			// form1
 			// 
@@ -218,7 +218,7 @@ namespace kurs {
 			this->Controls->Add(this->input_text);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"form1";
-			this->Text = L"form1";
+			this->Text = L"Graph Layout";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -231,39 +231,39 @@ namespace kurs {
 		std::string s = msclr::interop::marshal_as<std::string>(input_field->Text);
 
 		if (s.empty()) {
-			MessageBox::Show(this, "Введите граф", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show(this, "Р’РІРµРґРёС‚Рµ РіСЂР°С„", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
 
 		Graph G(s);
 
 		if (!G.correct()) {
-			MessageBox::Show(this, "Некорректные входные данные", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show(this, "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РІС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
 
 
 
 		if (listBox1->SelectedIndex == 0) {
-			out_text->Text = "Ребра, являющиеся мостами," + "\n" + "отображены красным цветом";
+			out_text->Text = "Р РµР±СЂР°, СЏРІР»СЏСЋС‰РёРµСЃСЏ РјРѕСЃС‚Р°РјРё," + "\n" + "РѕС‚РѕР±СЂР°Р¶РµРЅС‹ РєСЂР°СЃРЅС‹Рј С†РІРµС‚РѕРј";
 
 			G.Show_Bridges();
 			pictureBox1->ImageLocation = "D:\\GraphLayout\\Images\\Bridges.png";
 		}
 		else if (listBox1->SelectedIndex == 1) {
-			out_text->Text = "Вершины, являющиеся точками сочленения," + "\n" + "отображены красным цветом";
+			out_text->Text = "Р’РµСЂС€РёРЅС‹, СЏРІР»СЏСЋС‰РёРµСЃСЏ С‚РѕС‡РєР°РјРё СЃРѕС‡Р»РµРЅРµРЅРёСЏ," + "\n" + "РѕС‚РѕР±СЂР°Р¶РµРЅС‹ РєСЂР°СЃРЅС‹Рј С†РІРµС‚РѕРј";
 
 			G.Show_ArticulationPoints();
 			pictureBox1->ImageLocation = "D:\\GraphLayout\\Images\\ArticulationPoints.png";
 		}
 		else if (listBox1->SelectedIndex == 2) {
-			out_text->Text = "Вершины одной комопненты связности " + "\n" + "отображены своим уникальным цветом";
+			out_text->Text = "Р’РµСЂС€РёРЅС‹ РѕРґРЅРѕР№ РєРѕРјРѕРїРЅРµРЅС‚С‹ СЃРІСЏР·РЅРѕСЃС‚Рё " + "\n" + "РѕС‚РѕР±СЂР°Р¶РµРЅС‹ СЃРІРѕРёРј СѓРЅРёРєР°Р»СЊРЅС‹Рј С†РІРµС‚РѕРј";
 
 			G.Show_Components();
 			pictureBox1->ImageLocation = "D:\\GraphLayout\\Images\\Components.png";
 		}
 		else {
-			MessageBox::Show(this, "Выберите что хотите найти в графе", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show(this, "Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ С…РѕС‚РёС‚Рµ РЅР°Р№С‚Рё РІ РіСЂР°С„Рµ", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 
 	}
