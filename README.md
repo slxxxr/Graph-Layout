@@ -21,6 +21,7 @@
 Вершины, являющиеся точками сочленения, отображаются красным цветом.
 ![points](https://github.com/slxxxr/Graph-Layout/blob/main/Images/test_ArticulationPoints.png)
 
+
 ### Поиск компонент связности
 Вершины, принадлежащие одной компоненте, отображаются одинаковым цветом.
 ![components](https://github.com/slxxxr/Graph-Layout/blob/main/Images/test_Components.png)
