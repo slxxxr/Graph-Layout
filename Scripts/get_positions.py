@@ -7,7 +7,7 @@ G = nx.Graph()
 G.add_nodes_from(range(n))
 for i in range(m):
     v,u=map(int,f.readline().split())
-    G.add_edge(v,u)
+    G.add_edge(v-1,u-1)
 f.close()
 
 pos = nx.spiral_layout(G)

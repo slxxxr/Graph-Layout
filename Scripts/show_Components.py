@@ -15,7 +15,7 @@ def read_graph():
     G.add_nodes_from(range(n))
     for i in range(m):
         v,u=map(int,f.readline().split())
-        G.add_edge(v,u)
+        G.add_edge(v-1,u-1)
     f.close()
 
 def show_graph_components():
@@ -39,7 +39,7 @@ def show_graph_components():
 
         nodes = list(map(int,f.readline().rstrip().split()))
         for node in nodes:
-            node_colors[node] = color
+            node_colors[node-1] = color
     f.close()
 
     labels = dict()

@@ -12,7 +12,7 @@ def read_graph():
     G.add_nodes_from(range(n))
     for i in range(m):
         v,u=map(int,f.readline().split())
-        G.add_edge(v,u)
+        G.add_edge(v-1,u-1)
     f.close()
 
 
@@ -22,7 +22,7 @@ def show_graph_articulation_points():
     f.close()
     colors = ['lightblue' for i in range(n)]
     for i in points:
-        colors[i] = 'red'
+        colors[i-1] = 'red'
     labels = dict()
     for i in range(n):
         labels[i] = i+1

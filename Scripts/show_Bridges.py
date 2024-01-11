@@ -13,7 +13,7 @@ def read_graph():
     G.add_nodes_from(range(n))
     for i in range(m):
         v,u=map(int,f.readline().split())
-        G.add_edge(v,u)
+        G.add_edge(v-1,u-1)
     f.close()
 
 def show_graph_bridges():
@@ -23,8 +23,8 @@ def show_graph_bridges():
     bridges = set()
     for i in range(cnt):
         v,u = map(int, f.readline().rstrip().split())
-        bridges.add((v,u))
-        bridges.add((u,v))
+        bridges.add((v-1,u-1))
+        bridges.add((u-1,v-1))
     f.close()
 
     edge = list(G.edges())
