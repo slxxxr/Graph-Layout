@@ -8,21 +8,21 @@
 ## Ввод графа
 При запуске вас встречает следующее окно:
 
-![window](https://github.com/slxxxr/Graph-Layout/blob/main/Images/main_window.png)
+![window](https://github.com/slxxxr/Graph-Layout/blob/main/Images/readme_MainWindow.png)
 
 В левой части экрана находится поле для ввода. Граф вводится списком ребер в 1-нумерации. Сначала вводится количество вершин и ребер соответственно, далее начало и конец каждого ребра. Для удобства рядом с поле ввода находится формат ввода с примером. Также присутствует "легкая" проверка на неверные номера вершин. 
 После ввода необходимо выбрать что нужно найти в графе, нажать кнопку "Найти" и справа отобразится граф. Более подробнее руководство можно прочитать в окне с справочной информацией.
 ## Примеры 
 ### Поиск мостов
 Ребра, являющиеся мостами, отображаются красным цветом.
-![bridges](https://github.com/slxxxr/Graph-Layout/blob/main/Images/test_Bridges.png)
+![bridges](https://github.com/slxxxr/Graph-Layout/blob/main/Images/readme_Bridges.png)
 
 ### Поиск точек сочленения
 Вершины, являющиеся точками сочленения, отображаются красным цветом.
-![points](https://github.com/slxxxr/Graph-Layout/blob/main/Images/test_ArticulationPoints.png)
+![points](https://github.com/slxxxr/Graph-Layout/blob/main/Images/readme_ArticulationPoints.png)
 
 
 ### Поиск компонент связности
 Вершины, принадлежащие одной компоненте, отображаются одинаковым цветом.
-![components](https://github.com/slxxxr/Graph-Layout/blob/main/Images/test_Components.png)
+![components](https://github.com/slxxxr/Graph-Layout/blob/main/Images/readme_Components.png)
 
