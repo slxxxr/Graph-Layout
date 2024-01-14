@@ -1,0 +1,4 @@
+﻿  Graph.cpp
+D:\kurs\GraphLayout\src\MainApp\Graph.cpp(6,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  main.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  MainApp.vcxproj -> D:\kurs\GraphLayout\src\MainApp\x64\Debug\MainApp.exe
