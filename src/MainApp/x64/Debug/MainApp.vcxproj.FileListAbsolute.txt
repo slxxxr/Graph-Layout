@@ -1,4 +1,0 @@
-D:\kurs\GraphLayout\src\MainApp\x64\Debug\MainApp.vcxproj.AssemblyReference.cache
-D:\kurs\GraphLayout\src\MainApp\x64\Debug\MainApp.exe
-D:\kurs\GraphLayout\src\MainApp\x64\Debug\MainApp.Reference.resources
-D:\kurs\GraphLayout\src\MainApp\x64\Debug\MainApp.vcxproj.GenerateResource.cache
