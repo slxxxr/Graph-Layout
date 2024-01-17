@@ -288,10 +288,6 @@ void Graph::run_python(const std::string& scriptPath) {
 		CloseHandle(processInfo.hProcess);
 		CloseHandle(processInfo.hThread);
 	}
-	else
-	{
-		std::cerr << "Failed to create process: " << GetLastError() << std::endl;
-	}
 }
 
 
