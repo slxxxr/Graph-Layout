@@ -97,7 +97,7 @@ Graph::Graph(std::string& s, bool file_input) {
 
 	n = input[0];
 	m = input[1];
-	if (std::min(n, m) < 0) {
+	if (std::min(n, m) < 0 || 2 * m + 2 != (int)input.size()) {
 		set_error("Некорректные входные данные");
 		return;
 	}
