@@ -15,10 +15,6 @@ def read_graph():
         G.add_edge(v-1,u-1)
     f.close()
 
-    f = open("test.txt", 'w')
-    f.write("1")
-    f.close()
-
 
 def show_graph_articulation_points():
     f=open("..\\..\\TextFiles\\ArticulationPoints.txt",'r')
