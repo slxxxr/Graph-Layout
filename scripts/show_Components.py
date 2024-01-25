@@ -26,17 +26,16 @@ def show_graph_components():
 
     if(cnt > 5):
         all_colors = [name for name, hex in matplotlib.colors.CSS4_COLORS.items()]
-        np.random.shuffle(all_colors)
     else:
         all_colors = [name for name, hex in matplotlib.colors.TABLEAU_COLORS.items()]
 
-    used_colors = set(['black', 'darkseagreen', 'darkslateblue', 'darkslategray', 'darkslategrey', 'midnightblue', 'darkblue', 'navy', 'indigo'])
+    np.random.shuffle(all_colors)
+    bad_colors = ['black', 'darkseagreen', 'darkslateblue', 'darkslategray', 'darkslategrey', 'midnightblue', 'darkblue', 'navy', 'indigo']
     for i in range(cnt):
-        color = np.random.choice(all_colors)
-        while(color in used_colors):
-            color = np.random.choice(all_colors)
-        used_colors.add(color)
-
+        while(all_colors[-1] in bad_colors): #maximum 9(bad_colors len) iterations
+            all_colors.pop()
+        color = all_colors[-1]
+        all_colors.pop()
         nodes = list(map(int,f.readline().rstrip().split()))
         for node in nodes:
             node_colors[node-1] = color
