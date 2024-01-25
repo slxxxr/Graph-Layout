@@ -18,7 +18,7 @@ std::vector<int> Graph::parse(std::string& s) {
 					result.push_back(stoi(u));
 				}
 				catch (...) {
-					set_error("Некорректные входные данные");
+					set_error("Invalid input data");
 					return result;
 				}
 			}
@@ -32,7 +32,7 @@ std::vector<int> Graph::parse(std::string& s) {
 					result.push_back(stoi(u));
 				}
 				catch (...) {
-					set_error("Некорректные входные данные");
+					set_error("Invalid input data");
 					return result;
 				}
 			}
@@ -60,7 +60,7 @@ std::vector<int> Graph::read_file(std::string& _path) {
 	std::vector<int> result;
 
 	if (!in.is_open()) {
-		set_error("Не удалось открыть файл");
+		set_error("Failed to open file");
 		return result;
 	}
 
@@ -74,7 +74,7 @@ std::vector<int> Graph::read_file(std::string& _path) {
 		}
 	}
 	catch (...) {
-		set_error("Некорректные входные данные");
+		set_error("Invalid input data");
 		in.close();
 		return result;
 	}
@@ -98,7 +98,7 @@ Graph::Graph(std::string& s, bool file_input) {
 	n = input[0];
 	m = input[1];
 	if (std::min(n, m) < 0 || 2 * m + 2 != (int)input.size()) {
-		set_error("Некорректные входные данные");
+		set_error("Invalid input data");
 		return;
 	}
 
@@ -107,7 +107,7 @@ Graph::Graph(std::string& s, bool file_input) {
 	for (int i = 2, edge_ind = 0; i < 2 * m + 2; i += 2, edge_ind++) {
 		int v = input[i] - 1, u = input[i + 1] - 1;
 		if (std::min(v, u) < 0 || std::max(v, u) >= n) {
-			set_error("Некорректные входные данные");
+			set_error("Invalid input data");
 			return;
 		}
 		edges[edge_ind] = { v,u,edge_ind };
@@ -313,7 +313,12 @@ void Graph::Show_Components() {
 		this->Get_Components();
 	}
 
-	run_python("..\\..\\scripts\\show_Components.py");
+	if ((int)Components.size() > 139) {
+		set_error("Too many components, not enough colors to paint them");
+	}
+	else {
+		run_python("..\\..\\scripts\\show_Components.py");
+	}
 }
 
 

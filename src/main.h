@@ -249,16 +249,21 @@ namespace MainApp {
 #pragma endregion
 
 
+	private: void show_error(const char* error) {
+		pictureBox1->Image = nullptr;
+		MessageBox::Show(this, gcnew String(error), "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+
 	private: System::Void calc_btn_Click(System::Object^ sender, System::EventArgs^ e) {
 		std::string s = msclr::interop::marshal_as<std::string>(input_field->Text);
 
 		if (input_choice->SelectedIndex == -1) {
-			MessageBox::Show(this, "Выберите способ ввода графа", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MainApp::main::show_error("Select graph input method");
 			return;
 		}
 
 		if (s.empty()) {
-			MessageBox::Show(this, "Поле входных данных пустое", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MainApp::main::show_error("Input field is empty");
 			return;
 		}
 
@@ -266,7 +271,7 @@ namespace MainApp {
 
 		std::string error = "";
 		if (!G.correct(error)) {
-			MessageBox::Show(this, gcnew String(error.c_str()), "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MainApp::main::show_error(error.c_str());
 			return;
 		}
 
@@ -280,10 +285,15 @@ namespace MainApp {
 		}
 		else if (listBox1->SelectedIndex == 2) {
 			G.Show_Components();
-			pictureBox1->ImageLocation = "..\\..\\Images\\Components.png";
+			if (!G.correct(error)) {
+				MainApp::main::show_error(error.c_str());
+			}
+			else {
+				pictureBox1->ImageLocation = "..\\..\\Images\\Components.png";
+			}
 		}
 		else {
-			MessageBox::Show(this, "Выберите что хотите найти в графе", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MainApp::main::show_error("Select what you want to find in the graph");
 		}
 
 	}
